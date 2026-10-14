@@ -1,0 +1,66 @@
+/* paleta de colores hexadecimales y fuente de Google Fonts*/
+body{
+    text-align: center;
+    font-family: "Grechen Fuemen", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(201, 194, 245);
+}
+
+h1 {
+    color: #091e70;
+    font-size: 2.5rem;
+}
+/* selector descendiente */
+header h1{
+    color: #091e70;
+    font-size: 2.5rem;
+}
+/* selector agrupado */
+h2, h3, h4, h5{
+    color: #091e70;
+}
+li{
+    color: #000000;
+    font-size: 1.2rem;
+}
+p{
+    color: #2b2828;
+    font-size: 1.2rem;
+}
+a{
+    color: #ff00ff;
+    text-decoration: none;
+}   
+/* Clase para texto destacado */
+.destacado{
+    color: #c62828;
+    font-style: italic;
+    font-size: 2rem;
+    background-color: rgb(177, 170, 237);
+    padding: 25px;
+    border-radius: 200px;
+}
+/* id en la foto */
+#foto{
+    border: 4px solid #6f4e37;
+    border-radius: 12px;
+}
+    /* eliminar viñetas y números */
+ ul , ol{
+    list-style: none;
+}
+/* barra para separar el contacto */
+hr{
+    background-color: rgb(12, 12, 12);
+    height: 5px;
+    width: 80%;
+    border-style: double;
+    border-radius: 200px;
+}
+/* segunda clase para texto destacado */
+.destacado1{
+    color: #000000;
+    font-style: italic;
+    font-size: 2rem;
+}

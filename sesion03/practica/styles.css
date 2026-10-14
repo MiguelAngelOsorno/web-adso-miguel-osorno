@@ -1,0 +1,58 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+body{
+  font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal; 
+}
+hr{
+  background-color: blueviolet;
+  height: 15px;
+  width: 50%;
+  border-style: double;
+}
+
+h1 {
+  color: #091e70;
+  font-size: 2.5rem;
+}
+/* Cuando sea una clase usa el . */
+.destacada {
+  color: #c62828;
+  font-family: Georgia, 'Times New Roman', Times,
+serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  background-color: rgb(177, 170, 237);
+}
+
+/* Cuando sea un id se usa el # */
+#estudio{
+    background-color: rgb(228, 170, 237);
+    color: #ff0000;
+}
+
+.destacado1{
+  font-size: 1.2rem;
+  font-style: italic;
+}
+#portada{
+  border: 4px solid #6f4e37;
+  border-radius: 12px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ff00ff;
+}
+
+h2,h3,h4{
+    color: tomato;
+}
+h2 { color: blue; }
+.titulo-seccion { color: green; }
+h2 { color: red; }
