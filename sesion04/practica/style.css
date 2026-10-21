@@ -3,12 +3,12 @@
 }   
 body{
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem; 
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f2f4f7;
     color: #1f2933
 }
-
+    
 .tarjeta{
     max-width: 360px;/* Hace que no crezca mas que 360 pixeles */
     margin: 0 auto;/* para centrar un elemento */
