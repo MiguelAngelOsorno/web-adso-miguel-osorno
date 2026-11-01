@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El relajo</title>
+    <link rel="icon" href="img/Aguila.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>El relajo</h1>
+        <nav>
+            <a href="index.html">Inicio 🏘️</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+
+            <!-- Formulario de contacto requerido -->
+            <form id="form-contacto">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+        
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+        
+                <div>
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular">
+                </div>
+        
+                <div>
+                    <label for="motivo">Motivo:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccione un motivo</option>
+                        <option value="pedido">Pedido</option>
+                        <option value="pregunta">Pregunta</option>
+                        <option value="queja">Queja</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                
+                <br>
+
+                <button type="submit">Enviar mensaje</button>
+
+                <!-- 
+                  ¿Para qué sirve el atributo name?
+                  El atributo name es fundamental porque actúa como la "etiqueta" o clave 
+                  que identifica cada dato cuando el formulario es enviado al servidor 
+                  o procesado con JavaScript ya que sin el name, los datos ingresados por el 
+                  usuario viajarían sin un identificador y el servidor no sabría qué es qué.
+                -->
+            
+            </form>
+
+                <br><br>
+            <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/elrelajo7704%40gmail.com"
+                 target="_blank">Envíanos un correo Aqui!!</a></p>
+            <p><a href="https://www.whatsapp.com/" 
+                target="_blank">Escríbenos por WhatsApp Aqui!!</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nuestros horarios de atención son de 12:00 PM a 1:00 AM</p>
+        <p>2026 El relajo - Calle 104 A #74-41</p>
+    </footer>
+</body>
+</html>
