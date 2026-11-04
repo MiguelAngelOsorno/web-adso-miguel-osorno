@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #38bdf8;
+}
+
+.contenedor-vitrina {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-vitrina h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vitrina {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-producto {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categoria {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #64748b;
+  font-weight: bold;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.producto.agotado {
+  opacity: 0.6;
+}
+
+.etiqueta-agotado {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.pie-pagina {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f172a;
+  color: #cbd5e1;
+  padding: 2rem;
+  margin-top: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 250px;
+}
+
+.columna h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.columna ul {
+  list-style: none;
+}
+
+.columna ul li {
+  margin-bottom: 0.5rem;
+}
+
+.columna a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.columna a:hover {
+  color: #38bdf8;
+}
+/* 
+  ¿Cuándo usaría Flexbox o Grid?:
+  - Flexbox: Lo usaría para alinear elementos en una sola dirección (fila o columna), como el menú de navegación o los detalles dentro de una tarjeta.
+  - Grid: Lo usaría para armar la estructura general de la página o vitrinas de productos, ya que con 'auto-fit' y 'minmax' las columnas se acomodan solas sin enredarme con anchos fijos.
+*/
