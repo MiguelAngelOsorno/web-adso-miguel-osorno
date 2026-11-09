@@ -1,7 +1,9 @@
 /* 
- Explicación Padding vs Margin:
- - Padding: Es el espacio interno entre el contenido de un elemento y sus bordes.
- - Margin: Es el espacio externo que separa un elemento de los demás elementos a su alrededor.
+  ¿Qué es Mobile First?
+  Es una estrategia de diseño y desarrollo web donde primero se diseña y escribe 
+  el código CSS pensando en los dispositivos móviles (pantallas pequeñas), y luego, 
+  utilizando media queries con min-width, se van adaptando y agregando estilos 
+  para pantallas más grandes (como tablets y computadores).
 */
 
 *{
@@ -13,7 +15,7 @@ body{
     padding: 2rem 1rem;
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f2f4f7;
-    color: #1f2933
+    color: #1f2933;
 }
 
 .tarjeta{
@@ -31,19 +33,29 @@ body{
     background-color: #f8fcfc;
     border: 1px solid #e4e7eb;
     border-radius: 12px;
-    padding: 1.2rem;
+    padding: 1.5rem;
     margin: 1.5rem 0; 
 }
+
+.grid-retos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .tarjeta-reto{
     background-color: #f8f9fa;
     border: 1px solid #e4e7eb;
     border-radius: 12px;
     padding: 1.5rem;
-    margin: 1rem 0;
+    margin: 0;
 }
 
-.tarjeta-reto h2 {
+.tarjeta-reto h3 {
   margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #007d7b;
 }
 
 .avatar{
@@ -61,12 +73,14 @@ body{
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: normal;
+    color: #1f2933;
 }
 
 .boton{
+    display: inline-block;
     padding: 0.7rem 1.2rem;
     border: 2px solid #00537d;
     border-radius: 8px; 
@@ -74,6 +88,8 @@ h2 {
     color: #fff;
     font: inherit;
     cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
 .boton:hover{
@@ -87,4 +103,16 @@ h2 {
 
 a{
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .grid-retos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-retos {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
