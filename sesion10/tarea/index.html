@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kit.css">
+  <title>Mis deberes</title>
+</head>
+<body>
+
+  <main class="app-tareas tarjeta">
+    <header class="app-tareas-encabezado">
+      <h1>📋 Mis deberes</h1>
+      <button class="boton boton-secundario" aria-label="Cambiar tema">🌙</button>
+    </header>
+
+    <hr style="border: 0; border-top: 1px solid var(--borde); margin: 1.25rem 0;">
+
+    <form class="app-tareas-form">
+      <label for="nuevaTarea" class="oculto-visual">Nueva tarea</label>
+      <input type="text" id="nuevaTarea" placeholder="Escribe una tarea...">
+      <button type="submit" class="boton">Agregar</button>
+    </form>
+
+    <p class="alerta alerta-error oculto">⚠️ Escribe algo antes de agregar.</p>
+
+    <hr style="border: 0; border-top: 1px solid var(--borde); margin: 1.25rem 0;">
+
+    <ul class="lista-tareas">
+      <li class="tarea">
+        <span>Pagar los servicios</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <span>Hacer aseo</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <span>Mercar</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <span>Estudiar</span>
+        <button class="boton boton-peligro" aria-label="Eliminar">🗑️</button>
+      </li>
+    </ul>
+
+    <hr style="border: 0; border-top: 1px solid var(--borde); margin: 1.25rem 0;">
+
+    <p class="contador">4 pendientes de 5</p>
+  </main>
+
+</body>
+</html>

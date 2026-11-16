@@ -1,0 +1,169 @@
+/* ========== 1. VARIABLES ========== */
+:root {
+  --principal: #0052cc;
+  --principal-oscuro: #0747a6;
+  --peligro: #de350b;
+  --aviso: #ffab00;
+  --info: #00b8d9;
+  --exito-fondo: #e3fcef;
+  --error-fondo: #ffebe6;
+  --aviso-fondo: #fff0b3;
+  --info-fondo: #e6fcff;
+  --texto: #172b4d;
+  --texto-suave: #5e6c84;
+  --fondo: #f4f6f9;
+  --superficie: #ffffff;
+  --borde: #dfe1e6;
+  --radio: 12px;
+  --sombra: 0 4px 14px rgba(0, 82, 204, 0.1);
+  --fuente: "Poppins", Arial, sans-serif;
+}
+
+/* ========== 2. BASE ========== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--fuente);
+  line-height: 1.6;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: clamp(1.5rem, 5vw, 2.25rem); }
+a { color: var(--principal); }
+
+input, select, textarea, button { font: inherit; }
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 2px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.app-tareas-encabezado {
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.app-tareas-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;  
+}
+
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.tarea > :first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tarea .boton { flex-shrink: 0; }
+
+:focus-visible { outline: 3px solid #0065ff; outline-offset: 2px; }
+
+/* ========== 3. COMPONENTES ========== */
+.boton {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 2px solid var(--principal);
+  border-radius: 8px;
+  background-color: var(--principal);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.boton:hover { background-color: var(--principal-oscuro); transform: translateY(-1px); }
+
+.boton-secundario { background-color: transparent; color: var(--principal); }
+.boton-secundario:hover { background-color: var(--info-fondo); }
+
+.boton-peligro { border-color: var(--peligro); background-color: var(--peligro); }
+.boton-peligro:hover { background-color: #bf2600; }
+
+.boton:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+.alerta {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 5px solid;
+  border-radius: 8px;
+}
+.alerta-exito { border-color: #36b37e; background-color: var(--exito-fondo); }
+.alerta-error { border-color: var(--peligro); background-color: var(--error-fondo); }
+.alerta-aviso { border-color: var(--aviso); background-color: var(--aviso-fondo); }
+.alerta-info  { border-color: var(--info); background-color: var(--info-fondo); }
+
+.tarjeta {
+  width: 100%;
+  max-width: 36rem;
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background-color: var(--superficie);
+  box-shadow: var(--sombra);
+}
+
+/* ========== 4. ESTADOS ========== */
+.oculto { display: none !important; }
+
+.oculto-visual {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.hecha { color: var(--texto-suave); text-decoration: line-through; }
+
+input.error, .invalido { border-color: var(--peligro); background-color: var(--error-fondo); }
+small.error { display: block; min-height: 1.2em; color: var(--peligro); font-size: 0.85rem; }
+
+/* ======== 5. RESPONSIVE ======== */
+@media (min-width: 600px) {
+  body { padding: 2rem 1rem; }
+  .tarjeta { padding: 1.5rem; }
+  .app-tareas-form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .app-tareas-form .boton { flex-shrink: 0; }
+}
+
+@media (min-width: 1024px) {
+  body { padding: 3rem 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
