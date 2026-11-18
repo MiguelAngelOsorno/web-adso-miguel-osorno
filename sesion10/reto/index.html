@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kit.css">
+  <title>Guía de estilos - Mis deberes</title>
+</head>
+<body>
+
+  <main class="tarjeta">
+    <header>
+      <h1>📘 Mis deberes — Guía de estilos</h1>
+      <p>Componentes base y paleta azul para mis proyectos web.</p>
+    </header>
+
+    <br>
+
+    <!-- 1. PALETA DE COLORES -->
+    <section>
+      <h2>1. Paleta de colores</h2>
+      <div class="fila-colores">
+        <div class="muestra-color" style="background-color: var(--principal);">--principal</div>
+        <div class="muestra-color" style="background-color: var(--principal-oscuro);">--principal-oscuro</div>
+        <div class="muestra-color" style="background-color: var(--info);">--info</div>
+        <div class="muestra-color" style="background-color: var(--exito);">--exito</div>
+        <div class="muestra-color" style="background-color: var(--aviso);">--aviso</div>
+        <div class="muestra-color" style="background-color: var(--peligro);">--peligro</div>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- 2. TIPOGRAFÍA -->
+    <section>
+      <h2>2. Tipografía</h2>
+      <h1>Título principal (h1)</h1>
+      <h2>Subtítulo de sección (h2)</h2>
+      <h3>Título secundario (h3)</h3>
+      <p>Este es un párrafo normal con un <a href="#">enlace de ejemplo</a> para ver el contraste.</p>
+      <small>Este es un texto pequeño (small) para notas o detalles.</small>
+    </section>
+
+    <br>
+
+    <!-- 3. BOTONES -->
+    <section>
+      <h2>3. Botones</h2>
+      <button class="boton">Principal</button>
+      <button class="boton boton-secundario">Secundario</button>
+      <button class="boton boton-peligro">Peligro</button>
+      <button class="boton" disabled>Deshabilitado</button>
+    </section>
+
+    <br>
+
+    <!-- 4. ALERTAS E INSIGNIAS -->
+    <section>
+      <h2>4. Alertas e insignias</h2>
+      <div class="alerta alerta-exito">✅ Deber guardado correctamente.</div>
+      <div class="alerta alerta-info">ℹ️ Recuerda revisar la fecha de entrega.</div>
+      <div class="alerta alerta-aviso">⚠️ Faltan pocos días para cerrar el plazo.</div>
+      <div class="alerta alerta-error">❌ Error: escribe un título antes de guardar.</div>
+
+      <br>
+
+      <span class="insignia insignia-nuevo">Nuevo</span>
+      <span class="insignia insignia-oferta">Pendiente</span>
+      <span class="insignia insignia-agotado">Vencido</span>
+    </section>
+
+    <br>
+
+    <!-- 5. ESTADOS -->
+    <section>
+      <h2>5. Estados</h2>
+      <p class="cargando">Cargando lista de deberes...</p>
+      <p class="hecha">Estudiar para el quiz (tarea completada con clase .hecha)</p>
+
+      <br>
+
+      <label for="campoError">Campo con error:</label>
+      <input type="text" id="campoError" class="error" value="Texto inválido">
+      <small class="error">⚠️ Este campo es obligatorio.</small>
+
+      <br>
+
+      <button class="boton activo">Botón activo (.activo)</button>
+
+      <!-- El siguiente párrafo tiene la clase .oculto (display: none !important), por eso no se ve en pantalla -->
+      <p class="oculto">Este texto está oculto con la clase .oculto</p>
+    </section>
+  </main>
+
+</body>
+</html>
