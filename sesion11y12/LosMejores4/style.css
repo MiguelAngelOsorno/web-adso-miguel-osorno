@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #1f2933;
+}
+
+.tarjeta{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #e4e7eb;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}    
+
+.contenedor-retos{
+    background-color: #f8fcfc;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0; 
+}
+
+.grid-retos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tarjeta-reto{
+    background-color: #f8f9fa;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.tarjeta-reto h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #007d7b;
+}
+
+.avatar{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: #e3f5d8;
+    font-size: 4rem;
+    line-height: 96px;
+}
+
+#nombre{
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color: #1f2933;
+}
+
+.boton{
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #00537d;
+    border-radius: 8px; 
+    background-color: #007d7b;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.boton:hover{
+    background-color: #004664;
+}
+
+.boton:focus-visible{
+    outline: 5px solid #ed0a0a;
+    outline-offset: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .grid-retos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-retos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
