@@ -1,0 +1,59 @@
+:root {
+    --fondo-marca: #111827;
+    --superficie-marca: #1f2937;
+    --texto-marca: #e5e7eb;
+    --texto-suave-marca: #9ca3af;
+    --acento-marca: #34d399;
+    --acento-oscuro: #10b981;
+    --tarjeta-marca: #374151;
+    --whatsapp-marca: #25d366;
+    --whatsapp-hover: #1ebe5d;
+}
+
+.tema-relajo {
+    background-color: var(--fondo-marca);
+    color: var(--texto-marca);
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.titulo-marca {
+    color: var(--acento-marca);
+}
+
+.texto-suave-marca {
+    color: var(--texto-suave-marca);
+}
+
+.superficie-marca {
+    background-color: var(--superficie-marca);
+    color: var(--texto-marca);
+}
+
+.tarjeta-marca {
+    background-color: var(--tarjeta-marca);
+    color: var(--texto-marca);
+}
+
+.btn-relajo {
+    --bs-btn-color: #111827;
+    --bs-btn-bg: var(--whatsapp-marca);
+    --bs-btn-border-color: var(--whatsapp-marca);
+    --bs-btn-hover-color: #111827;
+    --bs-btn-hover-bg: var(--whatsapp-hover);
+    --bs-btn-hover-border-color: var(--whatsapp-hover);
+    --bs-btn-active-color: #111827;
+    --bs-btn-active-bg: var(--acento-oscuro);
+    --bs-btn-active-border-color: var(--acento-oscuro);
+    --bs-btn-focus-shadow-rgb: 52, 211, 153;
+}
+
+.btn-outline-relajo {
+    --bs-btn-color: var(--acento-marca);
+    --bs-btn-border-color: var(--acento-marca);
+    --bs-btn-hover-color: #111827;
+    --bs-btn-hover-bg: var(--acento-marca);
+    --bs-btn-hover-border-color: var(--acento-marca);
+    --bs-btn-active-color: #111827;
+    --bs-btn-active-bg: var(--acento-oscuro);
+    --bs-btn-active-border-color: var(--acento-oscuro);
+}
